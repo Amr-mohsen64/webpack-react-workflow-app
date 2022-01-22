@@ -1,0 +1,38 @@
+index.html file
+- components
+    js / jsx
+    css
+    imgs
+
+-> local server 
+
+->build -> "build" -> folder
+
+
+
+steps of workflow :
+
+    1- npm init -y (intialize package.json with yes to all config)
+    2- npm install webpack webpack-cli --save-dev (install webpack to project)
+    3- created src folder
+    4- added index.js in src folder
+    5- added html.js in src folder
+    6- added two modes of run(build) in package.json -> [development ,production] 
+        -  "scripts": {
+                "start" : "webpack --mode development" ,
+                "build" : "webpack --mode production"
+            }
+    7- make webpack works with html[install HtmlWebpackPlugin]
+    8- pass configrations to HtmlWebpackPlugin constructor ({template : './src/index.html'}) to get data from index.html to dist 
+    9- install babel loader[to transbile js to old browsers]
+    10- add babel loader rules to package.json
+    11- install React preset to transbile jsx files
+    12- install react [npm i react react-dom]
+    13- install webpack-dev-server
+    14- add in package.json [webpack-dev-server] in development
+    15- make importing of files without extensions [use reslove in package.json]
+    16- to use css [install css loader,style loader]
+    19- to make app use imgs [install url-loader]
+    
+
+    usefull link :https://createapp.dev/webpack/no-library  
